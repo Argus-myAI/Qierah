@@ -1,28 +1,414 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Qierah</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QIERAH Productions</title>
+
+    <meta name="description" content="QIERAH Productions provides AI-assisted tools for creating, editing and publishing original video content across authorised social media accounts.">
+
+    <link rel="icon" type="image/png" href="Qierahproductions%20logo.png">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f7fafb;
+            color: #173744;
+            line-height: 1.6;
+        }
+
+        header {
+            background: white;
+            border-bottom: 1px solid #dce7ea;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav {
+            max-width: 1100px;
+            margin: auto;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand {
+            font-weight: bold;
+            font-size: 20px;
+            color: #245d68;
+        }
+
+        nav a {
+            color: #245d68;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .hero {
+            max-width: 1100px;
+            margin: auto;
+            padding: 65px 24px;
+            display: grid;
+            grid-template-columns: 360px 1fr;
+            gap: 55px;
+            align-items: center;
+        }
+
+        .hero img {
+            width: 100%;
+            max-width: 350px;
+            border-radius: 16px;
+        }
+
+        h1 {
+            font-size: 46px;
+            line-height: 1.1;
+            margin: 0 0 12px;
+            color: #184e5a;
+        }
+
+        .tagline {
+            font-size: 21px;
+            color: #54818b;
+            margin-bottom: 22px;
+        }
+
+        .intro {
+            font-size: 18px;
+            color: #405d65;
+        }
+
+        section {
+            padding: 55px 24px;
+        }
+
+        .section-inner {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .alt {
+            background: white;
+            border-top: 1px solid #e0eaed;
+            border-bottom: 1px solid #e0eaed;
+        }
+
+        h2 {
+            font-size: 31px;
+            margin-top: 0;
+            color: #245d68;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid #dce7ea;
+            border-radius: 14px;
+            padding: 25px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.04);
+        }
+
+        .alt .card {
+            background: #f8fbfc;
+        }
+
+        .card h3 {
+            color: #267183;
+            margin-top: 0;
+        }
+
+        .platforms {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .platform {
+            border: 1px solid #d5e3e7;
+            border-radius: 10px;
+            padding: 18px;
+            background: white;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #173d47;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        footer a {
+            color: white;
+            margin: 0 12px;
+        }
+
+        @media (max-width: 800px) {
+            .hero {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero img {
+                margin: auto;
+            }
+
+            .cards,
+            .platforms {
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            nav div:last-child {
+                margin-top: 10px;
+            }
+
+            nav a {
+                margin: 0 7px;
+            }
+        }
+    </style>
 </head>
-<body style="font-family:Arial,sans-serif;max-width:800px;margin:60px auto;padding:20px;line-height:1.6;">
-  <h1>Qierah</h1>
 
-  <p>
-    Qierah is a personal desktop application used to create, edit and publish
-    original educational and entertainment video content to authorised social
-    media accounts.
-  </p>
+<body>
 
-  <p>
-    Qierah can publish content to services including TikTok, YouTube,
-    Facebook and Instagram when authorised by the user.
-  </p>
+<header>
+    <nav>
+        <div class="brand">QIERAH Productions</div>
 
-  <p>
-    <a href="privacy-policy.html">Privacy Policy</a>
-    &nbsp; | &nbsp;
-    <a href="terms-of-service.html">Terms of Service</a>
-  </p>
+        <div>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="#publishing">Publishing</a>
+            <a href="#tiktok">TikTok</a>
+            <a href="privacy-policy.html">Privacy</a>
+            <a href="terms-of-service.html">Terms</a>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+    <div class="hero">
+
+        <div>
+            <img src="Qierahproductions%20logo.png"
+                 alt="QIERAH Productions logo">
+        </div>
+
+        <div>
+            <h1>QIERAH Productions</h1>
+
+            <div class="tagline">
+                Ideas create brighter worlds
+            </div>
+
+            <p class="intro">
+                QIERAH is an AI-assisted desktop content creation and publishing
+                application designed for creator workflows.
+            </p>
+
+            <p class="intro">
+                It brings video planning, media creation, editing and
+                social publishing together in one workflow, allowing users
+                to review and approve their content before publishing it to
+                authorised social media accounts.
+            </p>
+        </div>
+
+    </div>
+
+    <section id="about" class="alt">
+        <div class="section-inner">
+
+            <h2>About QIERAH</h2>
+
+            <p>
+                QIERAH Productions develops tools that assist creators with the
+                production and management of original educational and
+                entertainment video content.
+            </p>
+
+            <p>
+                QIERAH combines different stages of video production into a
+                single desktop workflow, from developing a project through to
+                preparing and publishing the finished content.
+            </p>
+
+        </div>
+    </section>
+
+    <section id="features">
+
+        <div class="section-inner">
+
+            <h2>Content Creation Workflow</h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>Plan</h3>
+                    <p>
+                        Organise video projects, narration, scenes and other
+                        production information before content is created.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Create & Edit</h3>
+                    <p>
+                        Prepare original video content using media,
+                        narration and editing tools within the QIERAH
+                        production workflow.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Review & Publish</h3>
+                    <p>
+                        Review completed content and choose when and where
+                        authorised content is published.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="publishing" class="alt">
+
+        <div class="section-inner">
+
+            <h2>Social Media Publishing</h2>
+
+            <p>
+                QIERAH can connect to supported social platforms using their
+                authorised account and API systems. Users remain in control of
+                account authorisation and publishing actions.
+            </p>
+
+            <div class="platforms">
+                <div class="platform">TikTok</div>
+                <div class="platform">YouTube</div>
+                <div class="platform">Facebook</div>
+                <div class="platform">Instagram</div>
+            </div>
+
+            <p style="margin-top:25px;">
+                Creator brands and projects managed through QIERAH can include
+                channels such as <strong>Real and Explainable</strong>.
+                The creator channel and the QIERAH application are separate:
+                QIERAH provides the production and publishing workflow while
+                the authorised creator account receives the published content.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section id="tiktok">
+
+        <div class="section-inner">
+
+            <h2>TikTok Integration</h2>
+
+            <p>
+                QIERAH integrates with TikTok to provide an authorised
+                publishing workflow for users.
+            </p>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>Account Authorisation</h3>
+                    <p>
+                        Users authorise access to their TikTok account through
+                        TikTok's authentication process.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>User-Controlled Publishing</h3>
+                    <p>
+                        Content is prepared and reviewed before the user chooses
+                        to publish it to their authorised account.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Platform Permissions</h3>
+                    <p>
+                        QIERAH only requests platform access required for the
+                        supported publishing functions being used.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="alt">
+
+        <div class="section-inner">
+
+            <h2>Privacy & User Control</h2>
+
+            <p>
+                QIERAH is designed around user-controlled account access and
+                publishing. Users choose which supported accounts they
+                authorise and control the content they submit for publishing.
+            </p>
+
+            <p>
+                Additional information about data handling and use of the
+                service is available in our
+                <a href="privacy-policy.html">Privacy Policy</a>
+                and
+                <a href="terms-of-service.html">Terms of Service</a>.
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <strong>QIERAH Productions</strong>
+
+    <p>Ideas create brighter worlds</p>
+
+    <p>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        |
+        <a href="terms-of-service.html">Terms of Service</a>
+    </p>
+
+</footer>
+
 </body>
 </html>
