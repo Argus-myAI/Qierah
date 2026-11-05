@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://qierah.com/</loc></url>
-  <url><loc>https://qierah.com/contact.html</loc></url>
-  <url><loc>https://qierah.com/support.html</loc></url>
-  <url><loc>https://qierah.com/privacy-policy.html</loc></url>
-  <url><loc>https://qierah.com/terms-of-service.html</loc></url>
+  <url><loc>https://www.qierah.com/</loc></url>
+  <url><loc>https://www.qierah.com/contact.html</loc></url>
+  <url><loc>https://www.qierah.com/support.html</loc></url>
+  <url><loc>https://www.qierah.com/privacy-policy.html</loc></url>
+  <url><loc>https://www.qierah.com/terms-of-service.html</loc></url>
+<url><loc>https://www.qierah.com/apps/</loc><lastmod>2026-11-05</lastmod></url>
+<url><loc>https://www.qierah.com/apps/glitter-pix/</loc><lastmod>2026-11-05</lastmod></url>
+<url><loc>https://www.qierah.com/apps/simple-video-editor/</loc><lastmod>2026-11-05</lastmod></url>
 </urlset>
