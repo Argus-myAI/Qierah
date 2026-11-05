@@ -37,9 +37,9 @@
     box.style.cssText = 'position:fixed;bottom:14px;left:14px;right:14px;z-index:9999;max-width:740px;margin:auto;background:#fff;color:#183e47;border:1px solid #c6d9d2;border-radius:13px;box-shadow:0 8px 35px #183e4733;padding:16px 20px;font:14px/1.55 Segoe UI,Arial,sans-serif;';
     var message = document.createElement('p');
     message.style.cssText = 'margin:0 0 12px;';
-    message.textContent = 'May we use optional Google Analytics cookies to measure visits and clicks to Etsy? You can decline and still use the whole site. ';
+    message.textContent = 'May we use optional Google Analytics cookies to measure website visits and page views? You can decline and still use the whole site. ';
     var policy = document.createElement('a');
-    policy.href = location.pathname.indexOf('/shop/') === 0 ? '../privacy-policy.html' : 'privacy-policy.html';
+    policy.href = '/privacy-policy.html';
     policy.textContent = 'Privacy details';
     message.appendChild(policy);
     box.appendChild(message);
@@ -64,17 +64,6 @@
     document.querySelectorAll('[data-qierah-analytics-settings]').forEach(function (element) {
       element.addEventListener('click', function (event) { event.preventDefault(); show(); });
     });
-    document.addEventListener('click', function (event) {
-      var a = event.target.closest && event.target.closest('a[href]');
-      if (!a || !started || typeof window.gtag !== 'function') return;
-      var url;
-      try { url = new URL(a.href, location.href); } catch (e) { return; }
-      if (!/(^|\.)etsy\.com$/i.test(url.hostname)) return;
-      window.gtag('event', 'etsy_product_click', {
-        link_url: url.href,
-        link_text: (a.textContent || '').trim().slice(0, 100),
-        page_location: location.href
-      });
-    });
+
   });
 })();
